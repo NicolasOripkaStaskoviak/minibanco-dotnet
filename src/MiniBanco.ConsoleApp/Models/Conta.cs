@@ -21,20 +21,23 @@ namespace minibanco_dotnet.Models
             this.Saldo += valor;    
         }
 
-        public void Sacar(decimal valor, string descricao)
+       public virtual void Sacar(decimal valor, string descricao)
         {
-            if (valor > this.Saldo)
-            {
-                throw new SaldoInsuficienteException("Saldo insuficiente para realizar o saque.");
-            }
             if (valor <= 0)
             {
                 throw new ArgumentException("O valor do saque deve ser maior que zero.");
             }
 
+            if (valor > this.Saldo)
+            {
+                throw new SaldoInsuficienteException("Saldo insuficiente para realizar o saque.");
+            }
+            
             RegistrarTransacao(descricao, "Saque", valor);
             this.Saldo -= valor;
-        }   
+        }
+
+        public virtual void AplicarFechamentoMensal(){}  
 
         public Conta(int numero, string titular)
         {
