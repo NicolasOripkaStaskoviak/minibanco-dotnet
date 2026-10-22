@@ -5,21 +5,20 @@ Aplicação desenvolvida em Console Application utilizando C# e Programação Or
 
 ## 2. Estrutura do Projeto
 minibanco-dotnet/
-├── src/
-│   └── MiniBanco.ConsoleApp/
-│       ├── Program.cs
-│       ├── Models/
-│       │   ├── Transacao.cs
-│       │   ├── Conta.cs
-│       │   ├── ContaCorrente.cs
-│       │   ├── ContaPoupanca.cs
-│       │   └── ContaSalario.cs
-│       ├── Exceptions/
-│       │   └── SaldoInsuficienteException.cs
-│       ├── Services/
-│       │   └── MotorAnalise.cs
-│       └── MiniBanco.ConsoleApp.csproj
-└── README.md
+└── src/
+└── MiniBanco.ConsoleApp/
+├── Program.cs
+├── Models/
+│   ├── Transacao.cs
+│   ├── Conta.cs
+│   ├── ContaCorrente.cs
+│   ├── ContaPoupanca.cs
+│   └── ContaSalario.cs
+├── Exceptions/
+│   └── SaldoInsuficienteException.cs
+├── Services/
+│   └── MotorAnalise.cs
+└── MiniBanco.ConsoleApp.csproj
 
 ## 3. Funcionalidades e Regras de Negócio
 - Transacoes: Validação estrita de tipos (Deposito, Saque, Tarifa) e valores estritamente positivos, lançando exceções em caso de dados inválidos.
