@@ -187,7 +187,7 @@ Ao validar a aplicação, confira pelo menos os seguintes cenários:
 
 ## Demonstração em vídeo
 
-**Link do vídeo:** 
+**Link do vídeo:** https://www.youtube.com/watch?v=DO6AhqO0jHk
 
 ---
 
